@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Listy i Tabela w HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 8px;
+            text-align: left;
+        }
+        thead {
+            background-color: #eee;
+        }
+        .highlight {
+            background-color: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Weryfikacja umiejętności: Listy i Tabele</h1>
+
+    <section>
+        <h2>Część A - Listy</h2>
+
+        <h3>1. Lista nieuporządkowana – zalety HTML</h3>
+        <ul>
+            <li>Prosty do nauki i używania</li>
+            <li>Obsługiwany przez wszystkie przeglądarki</li>
+            <li>Podstawowy język tworzenia stron WWW</li>
+            <li>Łatwo integruje się z CSS i JavaScript</li>
+            <li>Bezpłatny i ogólnodostępny</li>
+        </ul>
+
+        <h3>2. Lista uporządkowana – kroki tworzenia strony internetowej</h3>
+        <ol>
+            <li>Planowanie struktury i treści strony</li>
+            <li>Tworzenie szkieletu HTML</li>
+            <li>Dodanie stylów CSS</li>
+            <li>Dodanie interakcji za pomocą JavaScript</li>
+            <li>Testowanie i publikacja strony</li>
+        </ol>
+
+        <h3>3. Lista definicji – terminy HTML</h3>
+        <dl>
+            <dt>DOCTYPE</dt>
+            <dd>Deklaracja typu dokumentu określająca wersję HTML</dd>
+
+            <dt>tag</dt>
+            <dd>Element składowy HTML opisujący strukturę dokumentu</dd>
+
+            <dt>atrybut</dt>
+            <dd>Informacje dodatkowe przypisane do tagu (np. class, id)</dd>
+
+            <dt>element</dt>
+            <dd>Pełna struktura: tag otwierający + zawartość + tag zamykający</dd>
+
+            <dt>href</dt>
+            <dd>Atrybut w tagu &lt;a&gt; określający adres odnośnika</dd>
+        </dl>
+
+        <h3>4. Lista zagnieżdżona – Technologie webowe</h3>
+        <ul>
+            <li>HTML
+                <ul>
+                    <li>Struktura strony</li>
+                    <li>Semantyka</li>
+                </ul>
+            </li>
+            <li>CSS
+                <ul>
+                    <li>Stylowanie</li>
+                    <li>Responsywność</li>
+                </ul>
+            </li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Część B - Tabela porównawcza tagów HTML</h2>
+
+        <table id="tag-comparison" class="highlight">
+            <thead>
+                <tr>
+                    <th>Nazwa tagu</th>
+                    <th>Przeznaczenie</th>
+                    <th>Przykład użycia</th>
+                    <th>Czy wymaga zamknięcia?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Tworzy akapit tekstu</td>
+                    <td>&lt;p&gt;To jest akapit&lt;/p&gt;</td>
+                    <td>Tak</td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td rowspan="2">Wstawianie elementów multimedialnych</td>
+                    <td>&lt;img src="obraz.jpg" alt="Opis"&gt;</td>
+                    <td>Nie</td>
+                </tr>
+                <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>&lt;video controls&gt;&lt;/video&gt;</td>
+                    <td>Tak</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Tworzy odnośnik</td>
+                    <td>&lt;a href="https://example.com"&gt;Kliknij mnie&lt;/a&gt;</td>
+                    <td>Tak</td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Łamanie linii</td>
+                    <td>Tekst przed&lt;br&gt;Tekst po</td>
+                    <td>Nie</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+         <script src="script.js"></script>
+
+
+
+</body>
+</html>
